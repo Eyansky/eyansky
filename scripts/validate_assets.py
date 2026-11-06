@@ -57,7 +57,8 @@ def validate():
                 require(path.is_relative_to(ROOT), f'Reference escapes repo: {url}')
                 require(path.is_file(), f'Missing local reference: {url}')
             elif parsed.fragment:
-                require(parsed.fragment in anchors, f'Missing heading anchor: {url}')
+                require(parsed.fragment.removeprefix('user-content-') in anchors,
+                        f'Missing heading anchor: {url}')
     for alt, ref in re.findall(r'!\[([^\]]*)\]\(([^)]+)\)', readme):
         require(bool(alt.strip()), f'Markdown image needs alt text: {ref}')
     require(not re.search(r'<(?:style|script|iframe|foreignObject)\b',readme,re.I),

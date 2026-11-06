@@ -14,6 +14,8 @@
 3. Preview the README on GitHub at desktop and mobile widths, in light and dark themes. Confirm `<picture>` selects each mobile image and all text fits inside SVG boundaries.
 4. Commit source and generated assets together. CI checks offline validation and deterministic regeneration. Live URL checks stay manual so temporary website/network failures cannot block copy edits.
 
+The top jump links explicitly use GitHub's rendered `user-content-` heading IDs. Unprefixed fragments updated the URL without scrolling in the verified public profile; preserve the prefix when editing these links.
+
 Python 3.10+ is sufficient. No pip or npm dependencies are required. The workflow uses the current checkout v7.0.1 release pinned to its immutable commit, with read-only repository permissions. It does not need custom secrets.
 
 ## Publishing requirements

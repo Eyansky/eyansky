@@ -5,7 +5,7 @@
 
 **Python at the core. Backend depth. Full-stack ownership. Based in Kenya.**
 
-[Explore my products](#featured-products) · [See my public code](#public-code--activity) · [Let's collaborate](#lets-build-something-great)
+[Explore my products](#user-content-featured-products) · [See my public code](#user-content-public-code--activity) · [Let's collaborate](#user-content-lets-build-something-great)
 
 <picture>
   <source media="(max-width: 600px)" srcset="assets/terminal-mobile.svg">
