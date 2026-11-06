@@ -1,0 +1,25 @@
+name: Validate profile
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  assets:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 3
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Validate Markdown, SVGs, and public content
+        run: python3 scripts/validate_assets.py
+      - name: Check generated artwork is up to date
+        run: |
+          python3 scripts/build_assets.py
+          git diff --exit-code -- assets
