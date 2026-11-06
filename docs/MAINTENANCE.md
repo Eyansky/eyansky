@@ -43,6 +43,8 @@ Do not rerun repository creation if it already exists. Clone it and apply change
 
 ## GitHub profile metadata
 
+The launch updated name, bio, location, and website through GitHub's signed-in profile editor and verified them with the public API. The existing CLI token could publish the repository but lacked profile-edit scope; no additional token permissions were requested.
+
 The intended fields are:
 
 ```sh

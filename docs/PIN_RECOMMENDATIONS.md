@@ -21,9 +21,9 @@ Glow Careers, mwangi.dev, and VibeCheck remain live-product features. The audit 
 
 Large forks such as `art-backend` and `CodeGraphContext` were not promoted merely for their inherited engineering depth. The checked default-branch `art-backend` commit query for author `Eyansky` returned no results; that does not prove Ian never contributed under another identity or branch. Confirm personal contribution before using a fork as authorship evidence. Empty repositories, first-draft setups, and scaffold-only projects were deprioritized.
 
-## Apply the pins manually
+## Maintain the pins
 
-GitHub's supported public API does not provide the needed pin-customization mutation in this workflow. The pins were therefore not changed.
+The six pins were applied through GitHub's signed-in browser UI on 2026-11-06. Their saved order was verified using the read-only GraphQL `pinnedItems` field. GitHub's public API did not provide a pin-customization mutation for this workflow. To change them later:
 
 1. Sign in and open [your GitHub profile](https://github.com/eyansky).
 2. At the top of **Popular repositories** or **Pinned**, click **Customize your pins**.
